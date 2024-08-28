@@ -15,23 +15,6 @@ var topKFrequent = function(nums, k) {
     // if map has the current num then add 1 to the counter, if not continue
     // return only if there are k elements
 
-    // attempt 1
-    // const count = new Map();
-    // const output = [];
-
-    // for (let i = 0; i < nums.length; i++) {
-    //     if (count.has(nums[i])) {
-    //         count.set(nums[i], count.get(nums[i]) + 1)
-    //     }
-    //     count.set(nums[i], 0)
-    // }
-    // sortedCount = [...count.entries()].sort((a, b) => b[1] - a[1])
-    
-    // for (let i = 0; i < k; i++) {
-    //     output.push(sortedCount[i][0])
-    // }
-    // return output;
-
     const count = new Map();
 
     for (const num of nums) {
